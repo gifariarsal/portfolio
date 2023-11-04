@@ -14,7 +14,7 @@ const about = () => {
     <>
       <Head>
         <title>Gifari | About Me</title>
-        <meta name="description" content="text" />
+        <meta name="description" content="about page" />
       </Head>
       <main className="flex items-center justify-center w-full flex-col">
         <Layout className="pt-16">

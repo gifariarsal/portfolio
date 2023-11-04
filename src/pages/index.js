@@ -11,9 +11,12 @@ export default function Home() {
     <>
       <Head>
         <title>Gifari&apos;s Portfolio</title>
-        <meta name="description" content="Landing page for Gifari's portfolio" />
+        <meta
+          name="description"
+          content="Landing page for Gifari's portfolio"
+        />
       </Head>
-      <main className="flex items-center text-dark w-full min-h-screen">
+      <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
         <Layout className="pt-0">
           <div className="flex items-center justify-between w-full">
             <div className="w-1/2">
@@ -38,14 +41,14 @@ export default function Home() {
                 <Link
                   href="/dummy.pdf"
                   target="_blank"
-                  className="flex items-center text-lg bg-dark text-light p-2 px-6 rounded-lg hover:bg-light hover:text-dark font-semibold border-2 border-solid border-transparent hover:border-dark"
+                  className="flex items-center text-lg bg-dark text-light p-2 px-6 rounded-lg hover:bg-light hover:text-dark font-semibold border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light"
                 >
                   Resume <LinkArrow className="w-6 ml-1" />
                 </Link>
                 <Link
                   href="mailto:muhgifariarsal@gmail.com"
                   target="_blank"
-                  className="ml-4 text-lg bg-light text-dark p-2 px-6 rounded-lg hover:bg-dark hover:text-light font-semibold border-2 border-solid border-dark"
+                  className="ml-4 text-lg bg-light text-dark p-2 px-6 rounded-lg hover:bg-dark hover:text-light font-semibold border-2 border-solid border-dark dark:border-light dark:bg-dark dark:text-light dark:hover:border-dark dark:hover:bg-light dark:hover:text-dark"
                 >
                   Contact Me
                 </Link>

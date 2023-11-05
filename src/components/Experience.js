@@ -7,7 +7,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
   return (
     <li
       ref={ref}
-      className="my-6 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between"
+      className="my-6 first:mt-0 last:mb-0 w-[60%] md:w-[80%] mx-auto flex flex-col items-center justify-between"
     >
       <LiIcon reference={ref} />
       <motion.div
@@ -16,20 +16,20 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
         transition={{ duration: 0.5, type: "spring" }}
         viewport={{ once: true }}
       >
-        <h3 className="font-bold text-2xl capitalize">
+        <h3 className="font-bold text-2xl capitalize sm:text-xl xs:text-lg">
           {position}&nbsp;
           <a
             href={companyLink}
             target="_blank"
-            className="text-primary capitalize"
+            className="text-primary dark:text-primaryDark capitalize"
           >
             @{company}
           </a>
         </h3>
-        <p className="capitalize font-medium text-dark/75 my-2">
+        <p className="capitalize font-medium text-dark/75 dark:text-light/75 my-2 xs:text-sm">
           {time} | {address}
         </p>
-        <p className="font-medium w-full">{work}</p>
+        <p className="font-medium w-full md:text-sm">{work}</p>
       </motion.div>
     </li>
   );
@@ -43,15 +43,15 @@ const Experience = () => {
     });
   return (
     <div className="my-48">
-      <h2 className="w-full text-8xl font-bold text-center mb-24">
+      <h2 className="w-full text-8xl font-bold text-center mb-24 md:text-6xl md:mb-16 xs:text-4xl">
         Experience
       </h2>
-      <div ref={ref} className="w-[75%%] mx-auto relative">
+      <div ref={ref} className="w-[75%] lg:w-[90%] md:w-full mx-auto relative">
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className="absolute left-9 top-1 w-[4px] h-full bg-dark origin-top"
+          className="absolute left-9 top-1 w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] md:left-[30px] xs:left-[20px]"
         />
-        <ul className="w-full flex flex-col items-start justify-between ml-4">
+        <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
             position="Software Engineer"
             companyLink="https://google.com"

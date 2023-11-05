@@ -42,8 +42,8 @@ const Experience = () => {
       offset: ["start end", "center start"],
     });
   return (
-    <div className="my-48">
-      <h2 className="w-full text-8xl font-bold text-center mb-24 md:text-6xl md:mb-16 xs:text-4xl">
+    <div className="my-40 md:my-20">
+      <h2 className="w-full text-8xl font-bold text-center mb-16 md:text-6xl md:mb-8 xs:text-4xl">
         Experience
       </h2>
       <div ref={ref} className="w-[75%] lg:w-[90%] md:w-full mx-auto relative">

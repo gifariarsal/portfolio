@@ -127,7 +127,7 @@ const projects = () => {
               <FeaturedProject
                 title="GrocerEasy"
                 type="Featured Project"
-                summary="GrocerEasy is an online grocery web app"
+                summary="Grocereasy is an online grocery web app that simplifies the shopping experience. With several store locations offering the same products, users are provided with recommendations to receive services from the store nearest to them."
                 img={GrocerEasy}
                 link="https://jcwd011001.purwadhikabootcamp.com/"
                 github="https://github.com/gifariarsal/final_project_group_1/tree/development"

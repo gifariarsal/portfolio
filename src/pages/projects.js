@@ -6,7 +6,9 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
-import GrocerEasy from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import grocereasy from "../../public/images/projects/grocereasy.png";
+import metis from "../../public/images/projects/metis.png";
+import bloggingapi from "../../public/images/projects/blogging_api.png";
 import TransitionEffect from "@/components/TransitionEffect";
 
 const FramerImage = motion(Image);
@@ -128,7 +130,7 @@ const projects = () => {
                 title="GrocerEasy"
                 type="Featured Project"
                 summary="Grocereasy is an online grocery web app that simplifies the shopping experience. With several store locations offering the same products, users are provided with recommendations to receive services from the store nearest to them."
-                img={GrocerEasy}
+                img={grocereasy}
                 link="https://jcwd011001.purwadhikabootcamp.com/"
                 github="https://github.com/gifariarsal/final_project_group_1/tree/development"
               />
@@ -137,16 +139,16 @@ const projects = () => {
               <Project
                 title="Metis"
                 type="Front-End Project"
-                img={GrocerEasy}
+                img={metis}
                 link="https://metisblog.netlify.app/"
                 github="https://github.com/gifariarsal/metis"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Blogging"
+                title="Blogging API"
                 type="Back-End Project"
-                img={GrocerEasy}
+                img={bloggingapi}
                 link="https://documenter.getpostman.com/view/27216835/2s946pYUD5"
                 github="https://github.com/gifariarsal/blogging_backend"
               />

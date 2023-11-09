@@ -60,7 +60,7 @@ const about = () => {
               />
             </div>
           </div>
-          {/* <Experience /> */}
+          <Experience />
           <Education />
           <Certificate />
           <Skills />

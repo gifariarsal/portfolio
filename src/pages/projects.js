@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 import grocereasy from "../../public/images/projects/grocereasy.png";
 import metis from "../../public/images/projects/metis.png";
 import bloggingapi from "../../public/images/projects/blogging_api.png";
+import chronos from "../../public/images/projects/chronos.png";
 import TransitionEffect from "@/components/TransitionEffect";
 
 const FramerImage = motion(Image);
@@ -32,7 +33,7 @@ const FeaturedProject = ({ title, type, summary, img, link, github }) => {
         />
       </Link>
       <div className="w-1/2 lg:w-full flex flex-col items-start justify-between pl-6 lg:pl-0 lg:pt-6">
-        <span className="text-primary dark:text-primaryDark font-medium text-xl xs:text-base">
+        <span className="text-primary dark:text-primaryDark font-bold text-xl xs:text-base">
           {type}
         </span>
         <Link
@@ -54,7 +55,7 @@ const FeaturedProject = ({ title, type, summary, img, link, github }) => {
           <Link
             href={link}
             target="_blank"
-            className="ml-4 rounded-lg bg-dark text-light dark:bg-light dark:text-dark p-2 px-6 text-lg font-semibold sm:px-4 sm:text-base"
+            className="ml-4 transition duration-300 rounded-lg bg-dark text-light border-2 border-solid border-transparent dark:bg-light dark:text-dark hover:bg-light hover:text-dark hover:border-dark dark:hover:bg-dark dark:hover:text-light dark:hover:border-light p-2 px-6 text-lg font-semibold sm:px-4 sm:text-base"
           >
             Visit Projects
           </Link>
@@ -83,7 +84,7 @@ const Project = ({ title, type, img, link, github }) => {
         />
       </Link>
       <div className="w-full flex flex-col items-start justify-between mt-4">
-        <span className="text-primary dark:text-primaryDark font-medium text-xl lg:text-lg md:text-base">
+        <span className="text-primary dark:text-primaryDark font-bold text-xl lg:text-lg md:text-base">
           {type}
         </span>
         <Link
@@ -137,8 +138,17 @@ const projects = () => {
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
+                title="Chronos"
+                type="Project"
+                img={chronos}
+                link="https://github.com/gifariarsal/chronos_client"
+                github="https://github.com/gifariarsal/chronos_client"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
                 title="Metis"
-                type="Front-End Project"
+                type="Project"
                 img={metis}
                 link="https://metisblog.netlify.app/"
                 github="https://github.com/gifariarsal/metis"
@@ -147,7 +157,7 @@ const projects = () => {
             <div className="col-span-6 sm:col-span-12">
               <Project
                 title="Blogging API"
-                type="Back-End Project"
+                type="Project"
                 img={bloggingapi}
                 link="https://documenter.getpostman.com/view/27216835/2s946pYUD5"
                 github="https://github.com/gifariarsal/blogging_backend"

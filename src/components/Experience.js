@@ -2,7 +2,7 @@ import React from "react";
 import { useScroll, motion } from "framer-motion";
 import LiIcon from "./LiIcon";
 
-const Details = ({ position, company, companyLink, time, address, work }) => {
+const Details = ({ position, company, companyLink, time, work }) => {
     const ref = React.useRef(null);
   return (
     <li
@@ -27,7 +27,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
           </a>
         </h3>
         <p className="capitalize font-medium text-dark/75 dark:text-light/75 my-2 xs:text-sm">
-          {time} | {address}
+          {time}
         </p>
         <p className="font-medium w-full md:text-sm">{work}</p>
       </motion.div>
@@ -53,52 +53,18 @@ const Experience = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
-            position="Software Engineer"
-            companyLink="https://google.com"
-            company="Google"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
+            position="Chemistry Tutor"
+            companyLink="https://www.quipper.com/id/"
+            company="Quipper"
+            time="Feb 2019 - Jun 2023"
+            work="I supported students by assisting with assignments, explaining complex problem-solving methods, and ensuring prompt responses to their needs. I guided them through challenges, simplified concepts, and tailored my approach for individual learning, fostering an interactive environment. My focus on effective communication and adaptability enhanced understanding of complex subjects."
           />
           <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="https://google.com"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
-          />
-          <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="https://google.com"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
-          />
-          <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="https://google.com"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
-          />
-          <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="https://google.com"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
-          />
-          <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="https://google.com"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
+            position="Tutor Test Center"
+            companyLink="https://pahamify.com/"
+            company="Pahamify"
+            time="Feb 2021 - May 2021"
+            work="I focused in producing detailed problem-solving videos, delved into complex problem concepts, meticulously planned and delivered clear explanations. Collaborated closely with the Quality Control team, ensuring the videos met stringent content standards, resulting in high-quality educational materials tailored to our audience's needs."
           />
         </ul>
       </div>

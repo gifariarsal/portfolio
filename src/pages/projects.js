@@ -8,8 +8,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import grocereasy from "../../public/images/projects/grocereasy.png";
 import metis from "../../public/images/projects/metis.png";
-import bloggingapi from "../../public/images/projects/blogging_api.png";
+import bloggingrestapi from "../../public/images/projects/blogging_rest_api.png";
 import chronos from "../../public/images/projects/chronos.png";
+import cashien from "../../public/images/projects/cashien.png";
 import TransitionEffect from "@/components/TransitionEffect";
 
 const FramerImage = motion(Image);
@@ -129,7 +130,7 @@ const projects = () => {
             <div className="col-span-12">
               <FeaturedProject
                 title="GrocerEasy"
-                type="Featured Project"
+                type="Full-Stack Project"
                 summary="Grocereasy is an online grocery web app that simplifies the shopping experience. With several store locations offering the same products, users are provided with recommendations to receive services from the store nearest to them."
                 img={grocereasy}
                 link="https://jcwd011001.purwadhikabootcamp.com/"
@@ -139,7 +140,7 @@ const projects = () => {
             <div className="col-span-6 sm:col-span-12">
               <Project
                 title="Chronos"
-                type="Project"
+                type="Full-Stack Project"
                 img={chronos}
                 link="https://github.com/gifariarsal/chronos_client"
                 github="https://github.com/gifariarsal/chronos_client"
@@ -147,8 +148,17 @@ const projects = () => {
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
+                title="Cashien"
+                type="Full-Stack Project"
+                img={cashien}
+                link="https://github.com/gifariarsal/group1/tree/development"
+                github="https://github.com/gifariarsal/group1/tree/development"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
                 title="Metis"
-                type="Project"
+                type="Front-End Project"
                 img={metis}
                 link="https://metisblog.netlify.app/"
                 github="https://github.com/gifariarsal/metis"
@@ -156,9 +166,9 @@ const projects = () => {
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Blogging API"
-                type="Project"
-                img={bloggingapi}
+                title="Blogging REST API"
+                type="Back-End Project"
+                img={bloggingrestapi}
                 link="https://documenter.getpostman.com/view/27216835/2s946pYUD5"
                 github="https://github.com/gifariarsal/blogging_backend"
               />

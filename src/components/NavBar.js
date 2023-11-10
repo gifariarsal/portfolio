@@ -59,6 +59,7 @@ const NavBar = () => {
       <button
         className="flex flex-col items-center justify-center hidden lg:flex"
         onClick={handleNav}
+        aria-labelledby="hamburger menu"
       >
         <span
           className={`bg-dark dark:bg-light transition-all duration-300 ease-out block h-0.5 w-6 rounded-sm ${
@@ -90,6 +91,7 @@ const NavBar = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 1 }}
             className="w-6 mx-3"
+            aria-label="Go to Github"
           >
             <GithubIcon />
           </motion.a>
@@ -99,23 +101,30 @@ const NavBar = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 1 }}
             className="w-6 mx-3"
+            aria-label="Go to Linkedin"
           >
             <LinkedInIcon />
           </motion.a>
-          <button
+          <motion.button
             onClick={() => setMode(mode === "light" ? "dark" : "light")}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 1 }}
             className={`ml-3 flex items-center justify-center rounded-full p-1 ${
               mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
             }`}
             aria-label="Toggle Dark Mode"
           >
             {mode === "dark" ? <SunIcon className="fill-dark" /> : <MoonIcon />}
-          </button>
+          </motion.button>
         </nav>
       </div>
 
       {activeNav && (
-        <motion.div className="min-w-[70vw] flex flex-col justify-between items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 bg-dark/75 dark:bg-light/75 rounded-lg backdrop-blur-md py-32" initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }} animate={{ scale: 1, opacity: 1 }}>
+        <motion.div
+          className="min-w-[70vw] flex flex-col justify-between items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 bg-dark/75 dark:bg-light/75 rounded-lg backdrop-blur-md py-32"
+          initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
+          animate={{ scale: 1, opacity: 1 }}
+        >
           <nav className="flex flex-col items-center justify-center">
             <CustomMobileLink
               href="/"
@@ -143,6 +152,7 @@ const NavBar = () => {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 1 }}
               className="w-6 mx-3 bg-light rounded-full dark:bg-dark"
+              aria-label="Go to Github"
             >
               <GithubIcon />
             </motion.a>
@@ -152,11 +162,14 @@ const NavBar = () => {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 1 }}
               className="w-6 mx-3"
+              aria-label="Go to Linkedin"
             >
               <LinkedInIcon />
             </motion.a>
-            <button
+            <motion.button
               onClick={() => setMode(mode === "light" ? "dark" : "light")}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 1 }}
               className={`ml-3 flex items-center justify-center rounded-full p-1 ${
                 mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
               }`}
@@ -167,7 +180,7 @@ const NavBar = () => {
               ) : (
                 <MoonIcon />
               )}
-            </button>
+            </motion.button>
           </nav>
         </motion.div>
       )}

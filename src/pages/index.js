@@ -43,7 +43,7 @@ export default function Home() {
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link
-                  href="https://docs.google.com/document/d/1HJrWlBKKlRsnMUkRUQ7mlNnbITG7y182d7ru_5a8O-s/edit?usp=sharing"
+                  href="https://drive.google.com/drive/folders/1toG4xWQBU82iJXAHJ758GlCrpUGPZNvN?usp=sharing"
                   target="_blank"
                   className="flex items-center text-lg bg-primary text-light p-2 px-6 rounded-lg transition duration-300 hover:bg-light hover:text-primary font-semibold border-2 border-solid border-transparent hover:border-primary dark:bg-primaryDark dark:text-dark hover:dark:bg-dark hover:dark:text-primaryDark hover:dark:border-primaryDark md:p-2 md:px-4 md:text-base"
                 >

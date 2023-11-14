@@ -2,7 +2,7 @@ import React from "react";
 import { useScroll, motion } from "framer-motion";
 import LiIcon from "./LiIcon";
 
-const Details = ({ type, time, place, info }) => {
+const Details = ({ type, time, place, credential }) => {
   const ref = React.useRef(null);
   return (
     <li
@@ -20,9 +20,8 @@ const Details = ({ type, time, place, info }) => {
           {type}
         </h3>
         <p className="capitalize font-medium text-dark/75 dark:text-light/75 my-2 xs:text-sm">
-          {time} | {place}
+          {time} | {place} | <a href={credential} target="_blank" className="hover:underline">Credential</a>
         </p>
-        <p className="font-medium w-full md:text-sm">{info}</p>
       </motion.div>
     </li>
   );
@@ -46,10 +45,22 @@ const Certificate = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
+            type="Full Stack Web Development"
+            time="Nov 2023"
+            place="Purwadhika Digital Technology School"
+            credential=""
+          />
+          <Details
+            type="Meta Front-End Developer Professional Certificate"
+            time="Nov 2023"
+            place="Meta on Coursera"
+            credential="https://coursera.org/share/146e10c5b32deb45805e727b3cf5976a"
+          />
+          <Details
             type="Google UX Design Professional Certificate"
-            time="2022"
+            time="Jan 2022"
             place="Google on Coursera"
-            info="I have created a UX design project to accomplish this program, named Tiketic, a mobile app for ordering movie tickets. In this program, we also put a lot of emphasis on the importance of inclusivity. This is because it relates to product design and can reach a wider variety of users."
+            credential="https://coursera.org/share/06c097e769caa0d15e9502b7240dc182"
           />
         </ul>
       </div>

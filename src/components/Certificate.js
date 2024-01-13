@@ -45,10 +45,16 @@ const Certificate = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
-            type="Full Stack Web Development"
-            time="Nov 2023"
-            place="Purwadhika Digital Technology School"
-            credential=""
+            type="Belajar Fundamental Aplikasi Web dengan React"
+            time="Dec 2023"
+            place="Dicoding Indonesia"
+            credential="https://www.dicoding.com/certificates/81P2V34LOPOY"
+          />
+          <Details
+            type="Belajar Membuat Aplikasi Web dengan React"
+            time="Dec 2023"
+            place="Dicoding Indonesia"
+            credential="https://www.dicoding.com/certificates/1OP8N686VXQK"
           />
           <Details
             type="Meta Front-End Developer Professional Certificate"

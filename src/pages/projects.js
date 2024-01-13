@@ -11,6 +11,7 @@ import metis from "../../public/images/projects/metis.png";
 import bloggingrestapi from "../../public/images/projects/blogging_rest_api.png";
 import chronos from "../../public/images/projects/chronos.png";
 import cashien from "../../public/images/projects/cashien.png";
+import thothes from "../../public/images/projects/thothes.png";
 import TransitionEffect from "@/components/TransitionEffect";
 
 const FramerImage = motion(Image);
@@ -144,6 +145,15 @@ const projects = () => {
                 img={chronos}
                 link="https://github.com/gifariarsal/chronos_client"
                 github="https://github.com/gifariarsal/chronos_client"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                title="Thothes"
+                type="Front-End Project"
+                img={thothes}
+                link="https://thothes.vercel.app"
+                github="https://github.com/gifariarsal/personal-notes-v2"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">

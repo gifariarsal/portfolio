@@ -12,6 +12,7 @@ import bloggingrestapi from "../../public/images/projects/blogging_rest_api.png"
 import chronos from "../../public/images/projects/chronos.png";
 import cashien from "../../public/images/projects/cashien.png";
 import thothes from "../../public/images/projects/thothes.png";
+import echoflow from "../../public/images/projects/echoflow.png";
 import TransitionEffect from "@/components/TransitionEffect";
 
 const FramerImage = motion(Image);
@@ -130,11 +131,20 @@ const projects = () => {
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-16 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
+                title="Echoflow"
+                type="Front-End Project"
+                summary="Echoflow is a web forum for user-generated discussions, featuring thread creation, comments, and an upvote/downvote system, fostering a vibrant community for sharing ideas and interactions."
+                img={echoflow}
+                link="https://echoflow.vercel.app/"
+                github="https://github.com/gifariarsal/echoflow"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
                 title="GrocerEasy"
                 type="Full-Stack Project"
-                summary="Grocereasy is an online grocery web app that simplifies the shopping experience. With several store locations offering the same products, users are provided with recommendations to receive services from the store nearest to them."
                 img={grocereasy}
-                link="https://jcwd011001.purwadhikabootcamp.com/"
+                link="https://github.com/gifariarsal/final_project_group_1/tree/development"
                 github="https://github.com/gifariarsal/final_project_group_1/tree/development"
               />
             </div>
@@ -170,7 +180,7 @@ const projects = () => {
                 title="Metis"
                 type="Front-End Project"
                 img={metis}
-                link="https://metisblog.netlify.app/"
+                link="https://github.com/gifariarsal/metis"
                 github="https://github.com/gifariarsal/metis"
               />
             </div>

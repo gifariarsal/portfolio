@@ -3,12 +3,12 @@ import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import React from "react";
-import aboutImage from "../../public/images/profile/about_pic.png";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
 import Certificate from "@/components/Certificate";
 import TransitionEffect from "@/components/TransitionEffect";
+import { about_pic } from "@/assets";
 
 const about = () => {
   return (
@@ -52,7 +52,7 @@ const about = () => {
             </div>
             <div className="w-[70%] col-span-4 md:col-span-8 relative h-max rounded-2xl bg-light shadow-xl dark:bg-dark p-2 md:order-1 mx-auto">
               <Image
-                src={aboutImage}
+                src={about_pic}
                 alt="Gifari"
                 className="w-full h-auto rounded-2xl"
                 priority

@@ -1,19 +1,21 @@
-import AnimatedText from "@/components/AnimatedText";
-import { GithubIcon } from "@/components/Icons";
-import Layout from "@/components/Layout";
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-import { motion } from "framer-motion";
-import grocereasy from "../../public/images/projects/grocereasy.png";
-import metis from "../../public/images/projects/metis.png";
-import bloggingrestapi from "../../public/images/projects/blogging_rest_api.png";
-import chronos from "../../public/images/projects/chronos.png";
-import cashien from "../../public/images/projects/cashien.png";
-import thothes from "../../public/images/projects/thothes.png";
-import echoflow from "../../public/images/projects/echoflow.png";
-import TransitionEffect from "@/components/TransitionEffect";
+import AnimatedText from '@/components/AnimatedText';
+import { GithubIcon } from '@/components/Icons';
+import Layout from '@/components/Layout';
+import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
+import { motion } from 'framer-motion';
+import TransitionEffect from '@/components/TransitionEffect';
+import {
+  blogging_rest_api,
+  cashien,
+  chronos,
+  echoflow,
+  grocereasy,
+  metis,
+  thothes,
+} from '@/assets';
 
 const FramerImage = motion(Image);
 
@@ -95,7 +97,9 @@ const Project = ({ title, type, img, link, github }) => {
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-2xl font-bold lg:text-2xl">{title}</h2>
+          <h2 className="my-2 w-full text-left text-2xl font-bold lg:text-2xl">
+            {title}
+          </h2>
         </Link>
         <div className="w-full mt-2 flex items-center justify-between">
           <Link
@@ -188,7 +192,7 @@ const projects = () => {
               <Project
                 title="Blogging REST API"
                 type="Back-End Project"
-                img={bloggingrestapi}
+                img={blogging_rest_api}
                 link="https://documenter.getpostman.com/view/27216835/2s946pYUD5"
                 github="https://github.com/gifariarsal/blogging_backend"
               />

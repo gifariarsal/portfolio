@@ -1,11 +1,11 @@
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
-import profilePicture from "../../public/images/profile/index_pic.png";
-import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
-import { LinkArrow } from "@/components/Icons";
 import TransitionEffect from "@/components/TransitionEffect";
+import AnimatedText from "@/components/AnimatedText";
+import { index_pic } from "@/assets";
+import { LinkArrow } from "@/components/Icons";
 
 export default function Home() {
   return (
@@ -23,7 +23,7 @@ export default function Home() {
           <div className="flex items-center justify-between w-full lg:flex-col">
             <div className="w-1/2 md:w-full sm:mb-8">
               <Image
-                src={profilePicture}
+                src={index_pic}
                 alt="Gifari"
                 className="w-full h-auto lg:hidden md:inline-block md:w-full"
                 priority

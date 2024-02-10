@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import {motion} from 'framer-motion'
 import Image from 'next/image';
-import LogoImage from "../../public/images/logo_gifari.png"
+import { logo_gifari } from "@/assets"
 
 const MotionLink = motion(Link);
 
@@ -19,7 +19,7 @@ const Logo = () => {
           scale: 0.98
         }}
       >
-        <Image src={LogoImage} alt="logo" />
+        <Image src={logo_gifari} alt="logo" />
       </MotionLink>
     </div>
   );

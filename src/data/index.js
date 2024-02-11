@@ -13,7 +13,8 @@ export const projectsData = [
     id: 'echoflow',
     title: 'Echoflow',
     type: 'Front-End Project',
-    summary: 'Echoflow is a web forum for user-generated discussions...',
+    summary:
+      'Echoflow provides a user-driven forum for engaging in discussions, allowing registered users to post threads, comment, and influence content visibility through upvotes and downvotes, promoting a dynamic exchange of ideas.',
     img: echoflow,
     link: 'https://echoflow.vercel.app/',
     github: 'https://github.com/gifariarsal/echoflow',

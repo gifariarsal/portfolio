@@ -70,3 +70,66 @@ export const projectsData = [
     github: 'https://github.com/gifariarsal/blogging_backend',
   },
 ];
+
+export const skills = [
+  {
+    id: 'html',
+    name: 'HTML',
+    x: '-21vw',
+    y: '2vw',
+  },
+  {
+    id: 'css',
+    name: 'CSS',
+    x: '-5vw',
+    y: '-8vw',
+  },
+  {
+    id: 'javascript',
+    name: 'Javascript',
+    x: '22vw',
+    y: '6vw',
+  },
+  {
+    id: 'react',
+    name: 'React.js',
+    x: '0vw',
+    y: '13vw',
+  },
+  {
+    id: 'chakra',
+    name: 'Chakra UI',
+    x: '-20vw',
+    y: '-15vw',
+  },
+  {
+    id: 'tailwind',
+    name: 'Tailwind CSS',
+    x: '13vw',
+    y: '-12vw',
+  },
+  {
+    id: 'express',
+    name: 'Express.js',
+    x: '30vw',
+    y: '-5vw',
+  },
+  {
+    id: 'mysql',
+    name: 'MySQL',
+    x: '0vw',
+    y: '-18vw',
+  },
+  {
+    id: 'figma',
+    name: 'Figma',
+    x: '-25vw',
+    y: '18vw',
+  },
+  {
+    id: 'git',
+    name: 'Git',
+    x: '25vw',
+    y: '18vw',
+  },
+];

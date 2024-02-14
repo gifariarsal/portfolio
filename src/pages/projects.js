@@ -3,15 +3,6 @@ import Head from 'next/head';
 import AnimatedText from '@/components/AnimatedText';
 import Layout from '@/components/Layout';
 import TransitionEffect from '@/components/TransitionEffect';
-import {
-  blogging_rest_api,
-  cashien,
-  chronos,
-  echoflow,
-  grocereasy,
-  metis,
-  thothes,
-} from '@/assets';
 import FeaturedProject from '@/components/FeaturedProject';
 import Project from '@/components/Project';
 import { projectsData } from '@/data';

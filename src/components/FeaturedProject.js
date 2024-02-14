@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { GithubIcon } from '@/components/Icons';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
@@ -25,9 +25,12 @@ const FeaturedProject = ({ title, type, summary, img, link, github }) => {
         />
       </Link>
       <div className="w-1/2 lg:w-full flex flex-col items-start justify-between pl-6 lg:pl-0 lg:pt-6">
-        <span className="text-primary dark:text-primaryDark font-bold text-xl xs:text-base">
-          {type}
-        </span>
+        <div className="w-full flex items-center justify-between">
+          <span className="text-primary dark:text-primaryDark font-bold text-xl xs:text-base">
+            {type}
+          </span>
+          <p className='text-light bg-primary dark:text-dark dark:bg-primaryDark px-4 py-2 rounded-lg text-sm font-bold'>Featured</p>
+        </div>
         <Link
           href={link}
           target="_blank"
@@ -57,4 +60,4 @@ const FeaturedProject = ({ title, type, summary, img, link, github }) => {
   );
 };
 
-export default FeaturedProject
+export default FeaturedProject;

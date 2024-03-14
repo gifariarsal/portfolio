@@ -33,7 +33,7 @@ const Project = ({ title, type, img, link, github }) => {
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-2xl font-bold lg:text-2xl">
+          <h2 className="my-2 w-full text-left text-2xl font-bold">
             {title}
           </h2>
         </Link>

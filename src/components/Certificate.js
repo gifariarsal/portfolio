@@ -7,7 +7,7 @@ const Details = ({ type, time, place, credential }) => {
   return (
     <li
       ref={ref}
-      className="my-6 first:mt-0 last:mb-0 w-[60%] md:w-[80%] mx-auto flex flex-col items-center justify-between"
+      className="my-6 first:mt-0 last:mb-0 w-[60%] md:w-[80%] mx-auto flex flex-col items-start justify-between"
     >
       <LiIcon reference={ref} />
       <motion.div
@@ -45,16 +45,10 @@ const Certificate = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
-            type="Belajar Fundamental Aplikasi Web dengan React"
-            time="Dec 2023"
+            type="React Developer (Learning Path)"
+            time="Feb 2024"
             place="Dicoding Indonesia"
-            credential="https://www.dicoding.com/certificates/81P2V34LOPOY"
-          />
-          <Details
-            type="Belajar Membuat Aplikasi Web dengan React"
-            time="Dec 2023"
-            place="Dicoding Indonesia"
-            credential="https://www.dicoding.com/certificates/1OP8N686VXQK"
+            credential="https://drive.google.com/drive/folders/1Rx5JWlRRoSq2Kwa42Zw-Cf-uRJZCVjhD?usp=sharing"
           />
           <Details
             type="Meta Front-End Developer Professional Certificate"

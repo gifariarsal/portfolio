@@ -53,6 +53,13 @@ const Experience = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
+            position="Frontend Developer"
+            companyLink="https://www.chromatiq.id/"
+            company="Chromatiq"
+            time="Feb 2024 - Present"
+            work="I am responsible for developing website projects received by the agency from clients. This involves determining the design experience, coding to develop the website, and even engaging in copywriting. I support project goals by contributing to all stages of development."
+          />
+          <Details
             position="Chemistry Tutor"
             companyLink="https://www.quipper.com/id/"
             company="Quipper"

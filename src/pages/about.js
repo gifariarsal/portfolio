@@ -1,14 +1,14 @@
-import AnimatedText from "@/components/AnimatedText";
-import Layout from "@/components/Layout";
-import Head from "next/head";
-import Image from "next/image";
-import React from "react";
-import Skills from "@/components/Skills";
-import Experience from "@/components/Experience";
-import Education from "@/components/Education";
-import Certificate from "@/components/Certificate";
-import TransitionEffect from "@/components/TransitionEffect";
-import { about_pic } from "@/assets";
+import AnimatedText from '@/components/AnimatedText';
+import Layout from '@/components/Layout';
+import Head from 'next/head';
+import Image from 'next/image';
+import React from 'react';
+import Skills from '@/components/Skills';
+import Experience from '@/components/Experience';
+import Education from '@/components/Education';
+import Certificate from '@/components/Certificate';
+import TransitionEffect from '@/components/TransitionEffect';
+import { about_pic } from '@/assets';
 
 const about = () => {
   return (
@@ -29,25 +29,19 @@ const about = () => {
               <h2 className="mb-4 text-2xl font-bold text-dark/75 dark:text-light/75">
                 About Me
               </h2>
-              <p className="font-medium mb-4">
-                I&apos;m in the midst of an exciting career shift, diving into
-                the dynamic world of web development. I firmly believe
-                continuous learning is the key to success, driving my dedication
-                as I immerse myself in various resources to broaden my
-                expertise. I embrace challenges as opportunities for personal
-                and professional growth, approaching each project with
-                enthusiasm to refine my skills and create innovative solutions.
+              <p className="font-medium mb-8 !leading-7">
+                I am dedicated to mastering web development, continuously
+                seeking out new learning opportunities and embracing challenges.
+                Each project is a chance to refine my skills and innovate,
+                fueling my professional growth.
               </p>
-              <p className="font-medium">
-                My main focus is React JS, a programming language that
-                captivates me with its power in building dynamic and responsive
-                user interfaces. I am dedicated to excelling as a proficient web
-                developer, driven by my passion for perpetual learning and
-                evolving in this ever-changing landscape. My goal is to craft
-                exceptional online experiences and make meaningful
-                contributions. Thank you for visiting my page! Join me on this
-                thrilling adventure in web development, exploring boundless
-                opportunities in the digital realm!
+              <p className="font-medium !leading-7">
+                I specialize in React JS, captivated by its capabilities for
+                creating dynamic and responsive user interfaces. My passion for
+                continuous learning drives my goal to excel as a web developer,
+                crafting exceptional online experiences. Thank you for visiting
+                my page! Join me in exploring the exciting opportunities of web
+                development.
               </p>
             </div>
             <div className="w-[70%] col-span-4 md:col-span-8 relative h-max rounded-2xl bg-light shadow-xl dark:bg-dark p-2 md:order-1 mx-auto">

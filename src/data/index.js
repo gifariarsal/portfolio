@@ -6,6 +6,8 @@ import {
   grocereasy,
   metis,
   thothes,
+  prestige,
+  chromatiq,
 } from '@/assets';
 
 export const projectsData = [
@@ -25,7 +27,7 @@ export const projectsData = [
     title: 'GrocerEasy',
     type: 'Full-Stack Project',
     img: grocereasy,
-    link: 'https://github.com/gifariarsal/final_project_group_1/tree/development',
+    link: '',
     github:
       'https://github.com/gifariarsal/final_project_group_1/tree/development',
   },
@@ -34,8 +36,24 @@ export const projectsData = [
     title: 'Chronos',
     type: 'Full-Stack Project',
     img: chronos,
-    link: 'https://github.com/gifariarsal/chronos_client',
+    link: '',
     github: 'https://github.com/gifariarsal/chronos_client',
+  },
+  {
+    id: 'prestige',
+    title: 'Prestige',
+    type: 'Front-End Project',
+    img: prestige,
+    link: 'https://prestigebatam.com/',
+    github: '',
+  },
+  {
+    id: 'chromatiq',
+    title: 'Chromatiq',
+    type: 'Front-End Project',
+    img: chromatiq,
+    link: 'https://chromatiq.vercel.app/',
+    github: '',
   },
   {
     id: 'thothes',
@@ -50,7 +68,7 @@ export const projectsData = [
     title: 'Cashien',
     type: 'Full-Stack Project',
     img: cashien,
-    link: 'https://github.com/gifariarsal/group1/tree/development',
+    link: '',
     github: 'https://github.com/gifariarsal/group1/tree/development',
   },
   {
@@ -58,7 +76,7 @@ export const projectsData = [
     title: 'Metis',
     type: 'Front-End Project',
     img: metis,
-    link: 'https://github.com/gifariarsal/metis',
+    link: '',
     github: 'https://github.com/gifariarsal/metis',
   },
   {

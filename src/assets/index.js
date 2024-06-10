@@ -7,6 +7,8 @@ import echoflow from '@/assets/images/projects/echoflow.png';
 import grocereasy from '@/assets/images/projects/grocereasy.png';
 import metis from '@/assets/images/projects/metis.png';
 import thothes from '@/assets/images/projects/thothes.png';
+import prestige from '@/assets/images/projects/prestige.png';
+import chromatiq from '@/assets/images/projects/chromatiq.png';
 import logo_gifari from '@/assets/images/logo_gifari.png';
 
 export {
@@ -19,5 +21,7 @@ export {
   grocereasy,
   metis,
   thothes,
-  logo_gifari
+  prestige,
+  chromatiq,
+  logo_gifari,
 };

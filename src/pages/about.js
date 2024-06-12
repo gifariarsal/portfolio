@@ -1,13 +1,13 @@
-import AnimatedText from '@/components/AnimatedText';
-import Layout from '@/components/Layout';
 import Head from 'next/head';
 import Image from 'next/image';
 import React from 'react';
-import Skills from '@/components/Skills';
-import Experience from '@/components/Experience';
-import Education from '@/components/Education';
-import Certificate from '@/components/Certificate';
-import TransitionEffect from '@/components/TransitionEffect';
+import Certificate from '@/components/about/Certificate';
+import Education from '@/components/about/Education';
+import Experience from '@/components/about/Experience';
+import Skills from '@/components/about/Skills';
+import AnimatedText from '@/components/common/AnimatedText';
+import Layout from '@/components/common/Layout';
+import TransitionEffect from '@/components/common/TransitionEffect';
 import { about_pic } from '@/assets';
 
 const about = () => {

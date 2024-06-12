@@ -1,10 +1,10 @@
 import React from 'react';
 import Head from 'next/head';
-import AnimatedText from '@/components/AnimatedText';
-import Layout from '@/components/Layout';
-import TransitionEffect from '@/components/TransitionEffect';
-import FeaturedProject from '@/components/FeaturedProject';
-import Project from '@/components/Project';
+import TransitionEffect from '@/components/common/TransitionEffect';
+import Layout from '@/components/common/Layout';
+import AnimatedText from '@/components/common/AnimatedText';
+import FeaturedProject from '@/components/projects/FeaturedProject';
+import Project from '@/components/projects/Project';
 import { projectsData } from '@/data';
 
 const projects = () => {

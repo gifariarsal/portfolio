@@ -1,8 +1,8 @@
 import React from 'react';
-import { GithubIcon } from '@/components/Icons';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
+import { GithubIcon } from '../common/Icons';
 
 const FramerImage = motion(Image);
 
@@ -29,7 +29,9 @@ const FeaturedProject = ({ title, type, summary, img, link, github }) => {
           <span className="text-primary dark:text-primaryDark font-bold text-xl xs:text-base">
             {type}
           </span>
-          <p className='text-light bg-primary dark:text-dark dark:bg-primaryDark px-4 py-2 rounded-lg text-sm font-bold'>Featured</p>
+          <p className="text-light bg-primary dark:text-dark dark:bg-primaryDark px-4 py-2 rounded-lg text-sm font-bold">
+            Featured
+          </p>
         </div>
         <Link
           href={link}

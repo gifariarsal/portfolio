@@ -1,11 +1,11 @@
-import Layout from "@/components/Layout";
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import TransitionEffect from "@/components/TransitionEffect";
-import AnimatedText from "@/components/AnimatedText";
-import { index_pic } from "@/assets";
-import { LinkArrow } from "@/components/Icons";
+import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
+import AnimatedText from '@/components/common/AnimatedText';
+import { LinkArrow } from '@/components/common/Icons';
+import Layout from '@/components/common/Layout';
+import TransitionEffect from '@/components/common/TransitionEffect';
+import { index_pic } from '@/assets';
 
 export default function Home() {
   return (

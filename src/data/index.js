@@ -158,7 +158,7 @@ export const experiences = [
     position: "Front-End Developer",
     companyLink: "https://www.chromatiq.id/",
     company: "Chromatiq",
-    time: "2021 - Present",
+    time: "Feb 2024 - Present",
     work: [
       "Developed and implemented website projects for various clients, ensuring a seamless and engaging user experience.",
       "Supported project goals through all stages of development, from initial concept to final deployment, successfully completing three web development projects.",

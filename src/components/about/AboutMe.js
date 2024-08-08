@@ -1,6 +1,6 @@
-import Image from 'next/image';
-import React from 'react';
-import { about_pic } from '@/assets';
+import Image from "next/image";
+import React from "react";
+import { about_pic } from "@/assets";
 
 const AboutMe = () => {
   return (

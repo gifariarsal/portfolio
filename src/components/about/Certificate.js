@@ -2,7 +2,6 @@ import React from "react";
 import { useScroll, motion } from "framer-motion";
 import LiIcon from "../common/LiIcon";
 
-
 const Details = ({ type, time, place, credential }) => {
   const ref = React.useRef(null);
   return (
@@ -21,7 +20,10 @@ const Details = ({ type, time, place, credential }) => {
           {type}
         </h3>
         <p className="capitalize font-medium text-dark/75 dark:text-light/75 my-2 xs:text-sm">
-          {time} | {place} | <a href={credential} target="_blank" className="hover:underline">Credential</a>
+          {time} | {place} |{" "}
+          <a href={credential} target="_blank" className="hover:underline">
+            Credential
+          </a>
         </p>
       </motion.div>
     </li>

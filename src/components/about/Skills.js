@@ -1,6 +1,6 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { skills } from '@/data';
+import React from "react";
+import { motion } from "framer-motion";
+import { skills } from "@/data";
 
 const Skill = ({ name, x, y }) => {
   return (

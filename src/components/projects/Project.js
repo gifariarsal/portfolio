@@ -1,8 +1,8 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import Image from 'next/image';
-import Link from 'next/link';
-import { GithubIcon } from '../common/Icons';
+import React from "react";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
+import { GithubIcon } from "../common/Icons";
 
 const FramerImage = motion(Image);
 
@@ -39,7 +39,7 @@ const Project = ({ title, type, img, link, github }) => {
         </Link>
         <div
           className={`w-full mt-2 flex items-center ${
-            link ? 'justify-between' : 'justify-end'
+            link ? "justify-between" : "justify-end"
           }`}
         >
           {link && (

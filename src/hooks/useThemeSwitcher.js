@@ -1,55 +1,55 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from "react";
 
 const useThemeSwitcher = () => {
-    const preferDark = "(prefers-color-scheme: dark)";
-    const [mode, setMode] = React.useState("");
+  const preferDark = "(prefers-color-scheme: dark)";
+  const [mode, setMode] = React.useState("");
 
-    useEffect(() => {
-        const mediaQuery = window.matchMedia(preferDark);
-        const userTheme = window.localStorage.getItem("theme");
+  useEffect(() => {
+    const mediaQuery = window.matchMedia(preferDark);
+    const userTheme = window.localStorage.getItem("theme");
 
-        const toggleMode = () => {
-            if(userTheme) {
-                let newMode = userTheme === "dark" ? "dark" : "light";
-                setMode(newMode);
-                if(newMode === "dark") {
-                    document.documentElement.classList.add("dark");
-                } else {
-                    document.documentElement.classList.remove("dark");
-                }
-            } else {
-                let newMode = mediaQuery.matches ? "dark" : "light";
-                setMode(newMode);
-                if(newMode === "dark") {
-                    document.documentElement.classList.add("dark");
-                } else {
-                    document.documentElement.classList.remove("dark");
-                }
-            }
+    const toggleMode = () => {
+      if (userTheme) {
+        let newMode = userTheme === "dark" ? "dark" : "light";
+        setMode(newMode);
+        if (newMode === "dark") {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.remove("dark");
         }
-
-        toggleMode();
-
-        mediaQuery.addEventListener("change", toggleMode);
-
-        return () => {
-            mediaQuery.removeEventListener("change", toggleMode);
+      } else {
+        let newMode = mediaQuery.matches ? "dark" : "light";
+        setMode(newMode);
+        if (newMode === "dark") {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.remove("dark");
         }
-    }, [])
+      }
+    };
 
-    useEffect(() => {
-        if(mode === "dark") {
-            window.localStorage.setItem("theme", "dark");
-            document.documentElement.classList.add("dark");
-        }
+    toggleMode();
 
-        if(mode === "light") {
-            window.localStorage.setItem("theme", "light");
-            document.documentElement.classList.remove("dark");
-        }
-    }, [mode])
+    mediaQuery.addEventListener("change", toggleMode);
 
-  return [mode, setMode]
-}
+    return () => {
+      mediaQuery.removeEventListener("change", toggleMode);
+    };
+  }, []);
 
-export default useThemeSwitcher
+  useEffect(() => {
+    if (mode === "dark") {
+      window.localStorage.setItem("theme", "dark");
+      document.documentElement.classList.add("dark");
+    }
+
+    if (mode === "light") {
+      window.localStorage.setItem("theme", "light");
+      document.documentElement.classList.remove("dark");
+    }
+  }, [mode]);
+
+  return [mode, setMode];
+};
+
+export default useThemeSwitcher;

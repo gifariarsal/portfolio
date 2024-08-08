@@ -1,13 +1,13 @@
-import Head from 'next/head';
-import React from 'react';
-import Certificate from '@/components/about/Certificate';
-import Education from '@/components/about/Education';
-import Experience from '@/components/about/Experience';
-import Skills from '@/components/about/Skills';
-import AnimatedText from '@/components/common/AnimatedText';
-import Layout from '@/components/common/Layout';
-import TransitionEffect from '@/components/common/TransitionEffect';
-import AboutMe from '@/components/about/AboutMe';
+import Head from "next/head";
+import React from "react";
+import Certificate from "@/components/about/Certificate";
+import Education from "@/components/about/Education";
+import Experience from "@/components/about/Experience";
+import Skills from "@/components/about/Skills";
+import AnimatedText from "@/components/common/AnimatedText";
+import Layout from "@/components/common/Layout";
+import TransitionEffect from "@/components/common/TransitionEffect";
+import AboutMe from "@/components/about/AboutMe";
 
 const about = () => {
   return (

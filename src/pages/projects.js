@@ -1,11 +1,11 @@
-import React from 'react';
-import Head from 'next/head';
-import TransitionEffect from '@/components/common/TransitionEffect';
-import Layout from '@/components/common/Layout';
-import AnimatedText from '@/components/common/AnimatedText';
-import FeaturedProject from '@/components/projects/FeaturedProject';
-import Project from '@/components/projects/Project';
-import { projectsData } from '@/data';
+import React from "react";
+import Head from "next/head";
+import TransitionEffect from "@/components/common/TransitionEffect";
+import Layout from "@/components/common/Layout";
+import AnimatedText from "@/components/common/AnimatedText";
+import FeaturedProject from "@/components/projects/FeaturedProject";
+import Project from "@/components/projects/Project";
+import { projectsData } from "@/data";
 
 const projects = () => {
   return (

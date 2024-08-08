@@ -52,7 +52,7 @@ export const projectsData = [
     title: "Chromatiq",
     type: "Front-End Project",
     img: chromatiq,
-    link: "https://chromatiq.vercel.app/",
+    link: "https://www.chromatiq.id/",
     github: "",
   },
   {

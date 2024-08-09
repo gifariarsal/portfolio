@@ -6,7 +6,7 @@ import { GithubIcon } from "../common/Icons";
 
 const FramerImage = motion(Image);
 
-const Project = ({ title, type, img, link, github }) => {
+const Project = ({ title, subtitle, type, img, link, github }) => {
   const outerLink = link || github;
 
   return (
@@ -35,7 +35,9 @@ const Project = ({ title, type, img, link, github }) => {
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-2xl font-bold">{title}</h2>
+          <h2 className="my-2 w-full text-left text-2xl font-bold">
+            {title} <span className="font-light text-xl">{`(${subtitle})`}</span>
+          </h2>
         </Link>
         <div
           className={`w-full mt-2 flex items-center ${

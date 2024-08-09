@@ -14,6 +14,7 @@ export const projectsData = [
   {
     id: "echoflow",
     title: "Echoflow",
+    subtitle: "Forum Thread App",
     type: "Front-End Project",
     summary:
       "Echoflow provides a user-driven forum for engaging in discussions, allowing registered users to post threads, comment, and influence content visibility through upvotes and downvotes, promoting a dynamic exchange of ideas.",
@@ -25,6 +26,7 @@ export const projectsData = [
   {
     id: "grocereasy",
     title: "GrocerEasy",
+    subtitle: "E-Commerce",
     type: "Full-Stack Project",
     img: grocereasy,
     link: "",
@@ -34,6 +36,7 @@ export const projectsData = [
   {
     id: "chronos",
     title: "Chronos",
+    subtitle: "Attendance System",
     type: "Full-Stack Project",
     img: chronos,
     link: "",
@@ -42,6 +45,7 @@ export const projectsData = [
   {
     id: "prestige",
     title: "Prestige",
+    subtitle: "Company Profile",
     type: "Front-End Project",
     img: prestige,
     link: "https://prestigebatam.com/",
@@ -50,6 +54,7 @@ export const projectsData = [
   {
     id: "chromatiq",
     title: "Chromatiq",
+    subtitle: "Company Profile",
     type: "Front-End Project",
     img: chromatiq,
     link: "https://www.chromatiq.id/",
@@ -58,6 +63,7 @@ export const projectsData = [
   {
     id: "thothes",
     title: "Thothes",
+    subtitle: "Personal Notes App",
     type: "Front-End Project",
     img: thothes,
     link: "https://thothes.vercel.app",
@@ -66,6 +72,7 @@ export const projectsData = [
   {
     id: "cashien",
     title: "Cashien",
+    subtitle: "POS",
     type: "Full-Stack Project",
     img: cashien,
     link: "",
@@ -74,6 +81,7 @@ export const projectsData = [
   {
     id: "metis",
     title: "Metis",
+    subtitle: "Blogging App",
     type: "Front-End Project",
     img: metis,
     link: "",
@@ -82,6 +90,7 @@ export const projectsData = [
   {
     id: "blogging_rest_api",
     title: "Blogging REST API",
+    subtitle: "Blogging App",
     type: "Back-End Project",
     img: blogging_rest_api,
     link: "https://documenter.getpostman.com/view/27216835/2s946pYUD5",
